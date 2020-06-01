@@ -1,0 +1,36 @@
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Opções</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item routerLink="/assistentevirtual">Assistente Virtual</ion-item>
+      <ion-item routerLink="/Simulador">Simulador</ion-item>
+      <ion-item routerLink="/sobre">Sobre</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
+<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  <ion-fab-button routerLink="/tabs/simulador">
+    <ion-icon name="calculator"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="perfil">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Perfil</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

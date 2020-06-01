@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Registre-se</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-icon name="person-circle-outline" class="icon" color="primary"></ion-icon>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon name="person-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input type="text" autofocus="true"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <ion-icon name="person-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">Sobrenome</ion-label>
+          <ion-input type="text" autofocus="true"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-icon name="man-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">RG</ion-label>
+          <ion-input type="number" autofocus="true"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item>
+          <ion-icon name="search-circle-outline" slot="start" color="primary"></ion-icon>
+          <ion-label position="floating">CPF</ion-label>
+          <ion-input type="number" autofocus="true"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>Gênero</ion-label>
+          <ion-select value="">
+            <ion-select-option value="man">Masculino</ion-select-option>
+            <ion-select-option value="woman">Feminino</ion-select-option>
+            <ion-select-option value="other">Outro</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item>
+    <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email" autofocus="true"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="key-outline" slot="start" color="primary"></ion-icon>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" routerLink="/criarconta">Criar conta</ion-button>
+  <ion-button expand="block" fill="outline" routerLink="">Já tenho conta</ion-button>
+
+</ion-content>

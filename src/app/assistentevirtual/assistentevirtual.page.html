@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Assistente Virtual</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="12">
+                <p> {{ mensagemSophia }} </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <img src="../../assets/imagens/sophia.png" class="sophia">
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-card>
+
+    <ion-grid>
+
+      <ion-row>
+        <ion-col>
+          {{ opcao1 }}
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          {{ opcao2 }}
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          {{ opcao3 }}
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          {{ opcao4 }}
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <ion-item>
+      <ion-icon slot="start" name="keypad-outline" color="primary"></ion-icon>
+      <ion-label position="floating">Opção</ion-label>
+      <ion-input type="number" [(ngModel)]="opcao"></ion-input>
+      <ion-button size="default" slot="end" fill="outline" (click)="escolaOpcao()">
+        <ion-icon name="send-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-card>
+
+</ion-content>

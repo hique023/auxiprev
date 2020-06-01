@@ -3,14 +3,41 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
+  {
+    path: 'criarconta',
+    loadChildren: () => import('./criarconta/criarconta.module').then( m => m.CriarcontaPageModule)
+  },
+  {
+    path: 'assistentevirtual',
+    loadChildren: () => import('./assistentevirtual/assistentevirtual.module').then( m => m.AssistentevirtualPageModule)
+  },
+  {
+    path: 'sobre',
+    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+  },
+  {
+    path: 'faq',
+    loadChildren: () => import('./faq/faq.module').then( m => m.FaqPageModule)
+  },
+  {
+    path: 'planosindicados',
+    loadChildren: () => import('./planosindicados/planosindicados.module').then( m => m.PlanosindicadosPageModule)
+  },
+  {
+    path: 'compareplanos',
+    loadChildren: () => import('./compareplanos/compareplanos.module').then( m => m.CompareplanosPageModule)
+  },
+  {
+    path: 'portabilidade',
+    loadChildren: () => import('./portabilidade/portabilidade.module').then( m => m.PortabilidadePageModule)
+  }
 ];
 
 @NgModule({
